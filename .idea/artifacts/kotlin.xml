@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="kotlin">
+    <output-path>$PROJECT_DIR$/meteor/client/kotlin</output-path>
+    <root id="root">
+      <element id="module-output" name="meteorkotlin" />
+    </root>
+  </artifact>
+</component>
