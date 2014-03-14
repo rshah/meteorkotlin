@@ -1,6 +1,10 @@
 var OurModule = Kotlin.modules.meteorkotlin;
 var BasePackage = OurModule.com.rshah.example.meteorkotlin;
 
+Template.hello.version = function () {
+    return "Meteor version: " + OurModule.meteorRelease();
+}
+
 Template.hello.greeting = function () {
     return OurModule.greeting("Kotlin - Meteor");
 };

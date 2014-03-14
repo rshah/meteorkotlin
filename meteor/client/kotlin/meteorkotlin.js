@@ -5,7 +5,15 @@
       return message;
     },
     clickMe: function () {
-      return 'Thanks for clicking the button';
+      if (!Meteor.isServer) {
+        return 'Thanks for clicking the button';
+      }
+       else {
+        return 'No No';
+      }
+    },
+    meteorRelease: function () {
+      return Meteor.release;
     },
     com: Kotlin.definePackage(null, /** @lends _.com */ {
       rshah: Kotlin.definePackage(null, /** @lends _.com.rshah */ {
