@@ -16,6 +16,7 @@ Template.hello.events({
 });
 
 Template.hello.greeting_class = function () {
-    var greeter = BasePackage.Greeter.prototype;
+    var greeter = new BasePackage.Greeter();
+
     return greeter.greet();
 };
