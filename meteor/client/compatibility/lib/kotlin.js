@@ -1,4 +1,3 @@
-Kotlin = {};
 'use strict';(function() {
   Array.isArray || (Array.isArray = function(c) {
     return "[object Array]" === Object.prototype.toString.call(c);
@@ -34,7 +33,7 @@ Kotlin = {};
     return c.constructor.prototype;
   });
 })();
-//var Kotlin = {};
+var Kotlin = {};
 (function() {
   function c(a, b) {
     if (null != a && null != b) {
